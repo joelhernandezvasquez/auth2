@@ -1,0 +1,176 @@
+
+@import 'colors.scss';
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6; 
+      
+}
+
+
+.sign-in-container{
+   height:100vh;
+   background-color:#FCD2E7;
+   padding:3rem 0;
+   
+   
+  
+}
+
+.illustration-container{
+    
+    height: 100%;
+    position: relative;
+  
+    img{
+       display:block;
+        margin:0 auto;
+       
+     
+      }
+
+      .form-container{
+        background:rgba(255,255,255,0.8);
+        height:600px;
+        width: 400px;
+        border-radius: 30px;
+        position:absolute;
+         top:75px;
+        left:330px; 
+         backdrop-filter: blur(2px);
+        z-index: 1;
+        border:2px solid transparent;
+        background-clip:padding-box;
+        box-shadow: 10px 10px 10px rgba(46,54,68,0.03);
+        padding:4rem 3rem;
+
+        h1{
+            color:$dark-black;
+            font-size: 4rem;
+            font-weight: 700;
+        }
+
+       
+    }
+}
+
+.btns-container{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top:1.5rem;
+}
+
+.auth-btn{
+    background:$dark-blue;
+    padding:0.8rem 2.5rem;
+    color:#feffff;
+    font-size: 0.9rem;
+    font-weight: 400;
+    border:none;
+    outline:transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    display:flex;
+    align-items: center;
+    i{
+        color:inherit;
+        font-size: 1.5rem;
+        margin-right: 0.8rem;
+    }
+}
+.dribble-btn{
+  width:50px;
+  height:50px;
+  border-radius: 10px;
+   background:$pink-shade;
+   display:flex;
+   align-items: center;
+   justify-content: center;
+
+   i{
+       color:#EC4788;
+       font-size: 1.5rem;
+       font-weight: 700;
+   }
+
+}
+
+.regular-aunthetication-form
+{
+    margin-top: 3rem;
+
+}
+
+.input-container{
+
+    display:flex;
+    flex-direction: column;
+    margin:1rem 0;
+    font-size: 0.85rem;
+    color:$dark-silver;
+    font-weight: 400;
+
+    input{
+        padding:0.8rem 1.5rem;
+        margin-top:0.6rem;
+        border:none;
+        border-radius:10px;
+        background:#FFFFFF;
+        color:$dark-black;
+        font-size: 1rem;
+        font-weight: 400;
+        border:2px solid transparent;
+        transition:border 0.2s ease-out;
+
+        &:focus{
+            outline:transparent;
+            border:2px solid #a8d1f4;
+        }
+        
+    }
+}
+
+.sign-in-btn{
+    background:$dark-black;
+    color:#FFFFFF;
+    font-size: 1rem;
+    padding:1.2rem 3.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    border:none;
+    font-weight: 400;
+    margin-top:0.5rem;
+}
+
+.home-page{
+    height:100vh;
+    background:$light-white;
+    padding:2rem;
+    overflow: hidden;
+
+    &:first-child button {
+       float:right;
+    }
+
+    #title-container{
+       
+        margin-top: 4rem;
+        height:100%;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+}
+
+
+
+
+
